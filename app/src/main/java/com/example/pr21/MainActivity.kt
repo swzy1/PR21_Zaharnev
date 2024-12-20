@@ -23,7 +23,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
 import com.example.composesqliteapp.DatabaseHelper
-import com.example.pr21.ui.theme.NikolaenkoPR22101Theme
+import com.example.pr21.ui.theme.ZakharnevPR22101Theme
 import androidx.compose.ui.platform.LocalContext
 
 class MainActivity : ComponentActivity() {
@@ -34,7 +34,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         dbHelper = DatabaseHelper(this)
         setContent {
-            NikolaenkoPR22101Theme {
+            ZakharnevPR22101Theme {
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background) {
                     UserInputScreen(dbHelper)
                 }
